@@ -16,14 +16,12 @@ const Header = () => {
   ];
   return (
     <header>
-      <a href="/">Greetings</a>
-
-      <nav>
-        <ul>
+      <nav className="navBarSec">
+        <ul className="navBarLinks">
           {
           links.map((link) => (
             <li key={link.id}>
-              <NavLink to={link.path}>{link.text}</NavLink>
+              <NavLink to={link.path} className="listItem">{link.text}</NavLink>
             </li>
           ))
         }
