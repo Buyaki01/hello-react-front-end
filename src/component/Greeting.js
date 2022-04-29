@@ -14,7 +14,7 @@ const Greeting = () => {
   };
 
   return (
-    <div className="m-3 flex justify-center">
+    <div className="flex justify-center">
       <p>{greetingsFromTheApi}</p>
       <button type="button" onClick={refreshPage} className="bg-sky-500 p-2 mt-4 rounded text-slate-50">Get another greeting</button>
     </div>
